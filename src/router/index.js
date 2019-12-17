@@ -29,7 +29,7 @@ const routes = [
             },{
                 path: 'child3',
                 component: () => import('../components/page/Children3.vue'),
-            }
+            },
         ],
         //设置相应元信息
         meta: {
@@ -42,6 +42,10 @@ const routes = [
         meta: {
             title: 'Login组件'
         }
+    },
+    {
+        path: '/demo',
+        component: () => import('../components/page/EleDemo.vue'),
     }
 ]
 
