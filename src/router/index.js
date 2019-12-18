@@ -29,7 +29,13 @@ const routes = [
             },{
                 path: 'child3',
                 component: () => import('../components/page/Children3.vue'),
-            },
+            },{
+                path: 'first',
+                component: () => import('../components/page/First.vue'),
+            },{
+                path: 'second',
+                component: () => import('../components/page/Second.vue'),
+            }
         ],
         //设置相应元信息
         meta: {
@@ -42,11 +48,11 @@ const routes = [
         meta: {
             title: 'Login组件'
         }
-    },
-    {
-        path: '/demo',
-        component: () => import('../components/page/EleDemo.vue'),
-    }
+    }//,
+    // {
+    //     path: '/demo',
+    //     component: () => import('../components/page/EleDemo.vue'),
+    // }
 ]
 
 export default new VueRouter({
